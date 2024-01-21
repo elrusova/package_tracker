@@ -15,17 +15,23 @@ Submit a pull request to the main repository.
 # Clone the repository
 git clone https://github.com/elrusova/package_tracker
 
+# Change into the cloned repository
+cd package_tracker 
+
 # Create a new branch
 git branch new_branch
 
 # Change into your branch
-git checkout -b new_branch
+git checkout new_branch
 
 # Install dependencies
 bundle install
 
 # Set up the database
-rails db:migrate db:create
+rails db:create db:migrate 
+
+# Open in your code editor
+code .
 
 # Start the server
 rails server
