@@ -1,24 +1,42 @@
-# README
+# PackageTracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+PackageTracer is a Ruby on Rails application that helps you track the status of your shipping from all shipping providers in one place. Just insert a tracking number on the home page and the status of your shipping will be displayed. 
 
-Things you may want to cover:
+## How to install and run locally
+You need to have [Ruby on Rails](https://gorails.com/setup/macos/13-ventura) installed on your computer. 
+Clone the repository to your local machine.
+Create a new branch for your feature or bug fix.
+Make your changes and commit them.
+Push your changes to your branch on GitHub.
+Submit a pull request to the main repository.
 
-* Ruby version
+```
+# Clone the repository
+git clone https://github.com/elrusova/package_tracker
 
-* System dependencies
+# Change into the cloned repository
+cd package_tracker 
 
-* Configuration
+# Create a new branch
+git branch new_branch
 
-* Database creation
+# Change into your branch
+git checkout new_branch
 
-* Database initialization
+# Install dependencies
+bundle install
 
-* How to run the test suite
+# Set up the database
+rails db:create db:migrate 
 
-* Services (job queues, cache servers, search engines, etc.)
+# Open in your code editor
+code .
 
-* Deployment instructions
+# Start the server
+rails server
 
-* ...
+# Open http://localhost:3000 with your browser to see your changes.
+```
+
+
