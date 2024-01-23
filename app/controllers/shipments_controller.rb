@@ -1,10 +1,13 @@
-class ShipmentController < ApplicationController
+class ShipmentsController < ApplicationController
+  def index
+  end
+
   def new
     @shipment = Shipment.new
   end
 
   def create
-    @shipment = Shipmentt.new(shipment_params)
+    @shipment = Shipment.new(shipment_params)
     if @shipment.save
       redirect_to shipment_path(@shipment)
     else
