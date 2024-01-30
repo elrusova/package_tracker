@@ -1,5 +1,6 @@
 class ShipmentsController < ApplicationController
-  def index
+  def home
+    @shipment = Shipment.all
   end
 
   def new

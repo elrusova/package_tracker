@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # resources :shipments, only: [:new, :create]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -6,6 +7,9 @@ Rails.application.routes.draw do
   # get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
-  get "index", to: "shipments#index"
+  root to: "shipments#home"
+  # get '/shipments/new', to: 'shipments#new'
+
+  # resources :shipment, only: %i[show new create update]
+  # get "index", to: "shipments#index"
 end
